@@ -1,0 +1,212 @@
+@media only screen and ( min-width: 980px )
+  .plan
+    width: 24.25%
+    + .plan
+      margin-left: 1%
+@media only screen and ( min-width: 765px ) and (max-width: 980px)
+  // CENTERING NAV BRAND
+  .navbar-brand, .navbar-header
+    width: 100%
+    img
+      display: block
+      margin: auto
+  // OUR TEAM
+  .our-team .members .member
+    text-align: center
+    margin-bottom: 50px
+    img
+      max-width: 200px
+    h4, h5
+      margin-bottom: 0px
+  // FOOTER
+  footer.footer
+    text-align: center
+    .copyrights
+      margin-top: 20px
+    .recent
+      text-align: left
+    .row > div
+      width: 50%
+      &:nth-of-type(2)
+        margin-bottom: 70px
+    // .row > div
+    //   padding-left: 50px
+    //   padding-right: 50px
+      // + div
+      //   border-top: 1px solid $white - 200
+      //   margin-top: 30px
+      //   padding-top: 30px
+  .plan
+    width: 49%
+    &:nth-of-type(2)
+      margin-left: 2%
+    &:nth-of-type(4)
+      margin-left: 2%
+  .plan
+    margin-top: 0!important
+    transform: none!important
+  // .active-plan
+  //   display: none!important
+
+
+  header.header, header.header.is-scrolling
+    .navbar
+      min-height: 45px
+    .navbar-default .navbar-nav > li > i,
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus
+      line-height: 45px
+      height: 45px
+    .navbar-default .navbar-nav > li.active,
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus
+      box-shadow: inset 0 -3px 0 $pClr
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus
+      box-shadow: inset 0 -3px 0 $white
+
+
+  .slider .item img
+    max-width: none
+    max-height: 100vh
+    margin-left: 50%
+    transform: translateX(-50%)
+
+@media all and ( max-width: 765px )
+
+  header.header
+
+  .navbar-default .navbar-toggle
+    border: none
+    border-radius: 0
+    margin-top: 0
+    height: 88px
+    margin-bottom: 0
+    &:hover,
+    &:focus
+      background-color: transparent
+
+  .navbar-collapse, .navbar-header
+    background-color: #222
+
+  header.header, header.header.is-scrolling
+    .navbar-default .navbar-nav > li > i,
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus,
+    .search
+      line-height: 35px
+      height: 35px
+
+    .navbar-brand
+      height: 60px
+      margin-top: 14px
+      margin-left: 10px
+    // REMOVE box-shadows
+    .navbar-default .navbar-nav > li.active
+      box-shadow: none
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus
+      box-shadow: none
+      padding: 0 20px
+
+    // ACTIVE
+    .navbar-default .navbar-nav > li.active
+      box-shadow: -4px 0 0 $pClr
+
+    .search-bar
+      position: static
+      width: 100%
+      padding: 0
+      margin: 0
+      display: block
+      transform: scale(1)
+      opacity: 1
+      &::before
+        display: none
+
+  .navbar-default .navbar-toggle .icon-bar
+    background-color: #fff
+
+  // SLIDER
+  body
+    padding-top: 88px
+  .slider
+    max-height: 50vh
+    .slide
+      height: 50vh
+
+    a.carousel-control.left
+      justify-content: flex-start
+      span
+        border-radius: 0
+    a.carousel-control.right
+      justify-content: flex-end
+      span
+        border-radius: 0
+  // BENEFITS
+  .benifit
+    margin-bottom: 50px
+
+  // OUR TEAM
+  .our-team .members .member
+    text-align: center
+    margin-bottom: 50px
+    img
+      max-width: 200px
+    h4, h5
+      margin-bottom: 0px
+
+  // Hacker Club
+  .hacker-club .plan
+    max-width: 400px
+    width: 100%
+    margin: auto
+
+  // SUBSCRIBE
+  .subscribe
+    h4
+      text-align: center
+    form
+        input.form-control
+          width: 100%
+          display: block
+        .btn
+          display: block
+          width: 100%
+          margin-top: 5px
+          margin-left: 0
+          margin-right: 0
+  // COMMENTS
+  .comments
+    text-align: center
+    &::after
+      display: none
+
+  // FOOTER
+  footer.footer
+    text-align: center
+    .copyrights
+      margin-top: 20px
+    .recent
+      text-align: left
+    .row > div
+      padding-left: 50px
+      padding-right: 50px
+      + div
+        border-top: 1px solid $white - 200
+        margin-top: 30px
+        padding-top: 30px
+
+
+  .slider .item img
+    max-width: none
+    max-height: 50vh
+    margin-left: 50%
+    transform: translateX(-50%)

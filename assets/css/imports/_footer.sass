@@ -1,0 +1,51 @@
+footer.footer
+  background-color: $dark
+  color: $white - 180
+  padding: 50px 0 0
+
+  h4
+    margin-bottom: 20px
+  .mb40
+    margin-bottom: 40px
+    display: block
+
+  a
+    color: $white - 80
+    text-decoration: none
+    &:hover
+      color: $white - 150
+  ul li
+    padding: 5px 0
+    border-top: 1px solid rgba($white, .05)
+    &:last-of-type
+      border-bottom: 1px solid rgba($white, .05)
+    &::before
+      content: "\f1b8"
+      font-family: 'icomoon' !important
+      font-size: 1.3em
+      margin-right: 10px
+  .copyrights
+    text-align: center
+    line-height: 60px
+    font-size: 1.1em
+    margin-top: 120px
+    background-color: rgba(#000, .2)
+
+  select
+    display: block
+    width: 100%
+    padding: 5px
+    background-color: transparent
+    border: 1px solid $white - 180
+    border-radius: 3px
+    cursor: pointer
+    &::after
+      content: "Hey"
+
+.orange-icon
+  background-color: $orange
+  line-height: 16px
+  width: 16px
+  height: 16px
+  border-radius: 2px
+  color: $white

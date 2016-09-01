@@ -1,0 +1,67 @@
+.is-open
+  // transform: translateX(-250px)
+
+.right-fixed-menu
+  height: 100vh
+  width: 250px
+  position: fixed
+  top: 0
+  right: -250px
+  bottom: 0
+  z-index: 999
+  background-color: $dark
+  padding: 20px 10px
+  z-index: 9999999
+  .close-menu
+    cursor: pointer
+    opacity: .7
+    transform: rotate(0deg)
+    width: 30px
+    height: 30px
+    line-height: 30px
+    &:hover
+      transform: rotate(180deg)
+  &.is-open
+    right: 0
+  .socials
+    margin-top: 70px
+    text-align: center
+    i
+      width: 30px
+      height: 30px
+      color: $white - 50
+
+  nav
+    margin-top: 30px
+    ul
+      li
+        padding: 10px 0
+        text-transform: uppercase
+        border-top: 1px solid rgba($white, .1)
+        &:last-of-type
+          border-bottom: 1px solid rgba($white, .1)
+        &.active
+          background-color: rgba($white, .05)
+        a
+          color: $white - 80
+          font-size: 1.1em
+          text-decoration: none
+          display: block
+        &:hover a
+          color: $white - 150
+
+
+// *
+//   background-color: rgba(#fff, .1)
+
+header.header.is-open
+  .navbar-fixed-top
+    position: fixed
+    top: 0
+    left: -500px
+body > *:not(.unmove)
+  &.is-slided
+    transform: translateX(-250px)
+body > *.static-side
+  &.is-slided
+    transform: translateX(0px)

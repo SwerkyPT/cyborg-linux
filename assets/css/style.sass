@@ -1,0 +1,138 @@
+$pClr  : #00b9f7
+$sClr  : #00526a
+$white : #fff
+$dark  : #1c1c1c
+$green : #689F38
+$blue  : #1976D2
+$yellow: #FBC02D
+$brown : #5D4037
+$red   : #d32f2f
+$pink  : #C2185B
+$bodyBG: #ddd
+$txtClr: #878787
+$orange: #dc4d00
+
+// MIXINS
+@import imports/mixins
+// BOOTSTRAP
+@import imports/bootstrap
+// BOOTSTRAP
+@import imports/icomoon
+
+// RESETS
+*
+  transition: all 500ms ease
+  outline: 0
+html, body
+  min-height: 100%
+  overflow-x: hidden
+
+body
+  background-color: $white
+  color: $white
+  font-family: Open Sans, sans-serif
+  font-size: 12px
+
+h1, h2, h3, h4, h5, h6
+  font-family: Roboto Condensed, sans-serif
+
+i
+  font-size: 1em
+  width: 1.2em
+  height: 1.2em
+  line-height: 1.2em
+  text-align: center
+  display: inline-block
+
+button, .btn
+  text-transform: uppercase
+img
+  max-width: 100%
+
+
+// HEADER section
+@import imports/header
+
+// Sidebar section
+@import imports/rightnav
+
+// GLOBAL
+.icon-sm
+  font-size: 1.5em
+.icon-md
+  font-size: 2em
+.icon-lg
+  font-size: 4.5em
+  width: 85px
+  height: 85px
+  line-height: 85px
+
+.btn-outline
+  border: 2px solid rgba(#fff, .2)
+  background-color: transparent
+  color: $white
+  font-weight: bold
+
+.big-section
+  color: $white
+  padding-bottom: 150px
+  h1, .h1
+    margin: 100px 0
+    span
+      color: $red
+  p, p:empty
+    line-height: 2em
+    min-height: 60px
+    font-size: 1.12em
+    margin-bottom: 80px
+
+.hint span
+  text-transform: uppercase
+  color: #000 + 200
+  font-size: .9em
+  display: inline-block
+  position: relative
+  &::before, &::after
+    content: ""
+    position: absolute
+    top: 49%
+    width: 50px
+    left: -60px
+    border-top: 1px solid  #000 + 200
+  &::after
+    right: -60px
+    left: auto
+
+//  BENIFITS section
+@import imports/benefits
+
+// The Next Generation section
+@import imports/testing
+
+// Highlight section
+@import imports/highlight
+
+// Our Team section
+@import imports/ourteam
+
+// Hackers Club section
+@import imports/hackclub
+
+// We Dont Spy & Testimonials section
+@import imports/notspy
+
+// Subscrtion section
+@import imports/subscribe
+
+// Scroll To Top Button section
+@import imports/totop
+
+// Subscribe section
+@import imports/comments
+
+// Footer section
+@import imports/footer
+
+
+// Media Query
+@import imports/media

@@ -1,0 +1,44 @@
+.comments
+  padding: 80px 0
+  background-color: $white
+  position: relative
+  &::after
+    content: ""
+    border-left: 1px solid  $white - 40
+    height: calc(100% - 200px)
+    position: absolute
+    top: 100px
+    left: 125px
+    bottom: 100px
+    z-index: 2
+  .profile
+    position: relative
+    z-index: 3
+
+  .hint span
+    &::before, &::after
+      width: 250px
+      left: -260px
+    &::after
+      right: -260px
+      left: auto
+
+  .comment
+    .profile
+      max-width: 50px
+      background-color: $white
+    .username
+      color: $blue
+      font-size: 1.2em
+      font-weight: bold
+    .text
+      color: $dark
+    .date, .login
+      color: $white - 80
+      font-size: .9em
+    hr
+      border-color: $white - 40
+  .reply
+    color: $white - 80
+    h4
+      color: $dark + 50
